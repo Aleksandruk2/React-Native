@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using WebApiReact.Entities.Identity;
+using WebAPIReact.Entities.Identity;
 
-namespace WebApiReact.Data;
+namespace WebAPIReact.Data;
 
 public class AppDbContext : IdentityDbContext<
     UserEntity,

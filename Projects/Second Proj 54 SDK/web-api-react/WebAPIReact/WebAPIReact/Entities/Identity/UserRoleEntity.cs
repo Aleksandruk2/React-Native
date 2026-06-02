@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace WebApiReact.Entities.Identity;
+namespace WebAPIReact.Entities.Identity;
 
 public class UserRoleEntity : IdentityUserRole<long>
 {

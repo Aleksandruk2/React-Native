@@ -135,3 +135,5 @@ C:\Users\My data\data\React-Native\Projects\Second Proj 54 SDK\web-api-react\Web
 C:\Users\My data\data\React-Native\Projects\Second Proj 54 SDK\web-api-react\WebAPIReact\WebAPIReact\obj\Debug\net10.0\WebAPIReact.pdb
 C:\Users\My data\data\React-Native\Projects\Second Proj 54 SDK\web-api-react\WebAPIReact\WebAPIReact\obj\Debug\net10.0\WebAPIReact.genruntimeconfig.cache
 C:\Users\My data\data\React-Native\Projects\Second Proj 54 SDK\web-api-react\WebAPIReact\WebAPIReact\obj\Debug\net10.0\ref\WebAPIReact.dll
+C:\Users\My data\data\React-Native\Projects\Second Proj 54 SDK\web-api-react\WebAPIReact\WebAPIReact\bin\Debug\net10.0\Helpers\JsonData\Users.json
+C:\Users\My data\data\React-Native\Projects\Second Proj 54 SDK\web-api-react\WebAPIReact\WebAPIReact\bin\Debug\net10.0\AutoMapper.dll
