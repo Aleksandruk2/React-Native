@@ -1,11 +1,23 @@
-import {configureStore} from "@reduxjs/toolkit";
-import {accountApi} from "@/api/accountApi";
+import {combineReducers, configureStore} from "@reduxjs/toolkit";
+import {authService} from "@/services/authService";
+import authReducer from "./reducers/authSlice";
+
+const rootReducer = combineReducers({
+    [authService.reducerPath]: authService.reducer,
+    authReducer,
+})
+
+export const setupStore = () => {
+    return configureStore({
+        reducer: rootReducer,
+        middleware: (getDefaultMiddleware) =>
+            getDefaultMiddleware().concat(
+                authService.middleware,
+            ),
+    })
+}
 
 
-export const store = configureStore({
-    reducer: {
-        [accountApi.reducerPath]: accountApi.reducer,
-    },
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware()
-        .concat(accountApi.middleware)
-});
+export type  RootState = ReturnType<typeof rootReducer>
+export type  AppStore = ReturnType<typeof setupStore>
+export type  AppDispatch = AppStore['dispatch'];

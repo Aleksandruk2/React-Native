@@ -8,6 +8,7 @@ using WebAPIReact;
 using WebAPIReact.Data;
 using WebAPIReact.Entities.Identity;
 using WebAPIReact.Interfaces;
+using WebAPIReact.Mapper;
 using WebAPIReact.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<IImageService, ImageService>();
 builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+builder.Services.AddSingleton<UserMapper>();
 
 // CORS
 builder.Services.AddCors(options =>
