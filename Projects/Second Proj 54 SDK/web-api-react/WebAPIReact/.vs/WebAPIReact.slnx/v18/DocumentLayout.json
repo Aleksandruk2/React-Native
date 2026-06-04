@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\helpers\\jsondata\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\helpers\\jsondata\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\controllers\\acountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,10 +63,6 @@
       "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\entities\\identity\\roleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\helpers\\jsondata\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\helpers\\jsondata\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\entities\\identity\\userroleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\entities\\identity\\userroleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -78,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -88,49 +88,10 @@
               "RelativeDocumentMoniker": "WebAPIReact\\Program.cs",
               "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Program.cs",
               "RelativeToolTip": "WebAPIReact\\Program.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAAAFcAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAACAAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T19:22:53.283Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "WebAPIReact\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Properties\\launchSettings.json",
-              "RelativeToolTip": "WebAPIReact\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-02T13:59:22.952Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AcountController.cs",
-              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Controllers\\AcountController.cs",
-              "RelativeDocumentMoniker": "WebAPIReact\\Controllers\\AcountController.cs",
-              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Controllers\\AcountController.cs",
-              "RelativeToolTip": "WebAPIReact\\Controllers\\AcountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T13:57:49.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginModel.cs",
-              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Auth\\LoginModel.cs",
-              "RelativeDocumentMoniker": "WebAPIReact\\Model\\Auth\\LoginModel.cs",
-              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Auth\\LoginModel.cs",
-              "RelativeToolTip": "WebAPIReact\\Model\\Auth\\LoginModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T13:55:24.332Z",
               "EditorCaption": ""
             },
             {
@@ -139,7 +100,56 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebAPIReact\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebAPIReact\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-02T13:59:22.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Auth\\LoginModel.cs",
+              "RelativeDocumentMoniker": "WebAPIReact\\Model\\Auth\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Auth\\LoginModel.cs",
+              "RelativeToolTip": "WebAPIReact\\Model\\Auth\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T13:55:24.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Users.json",
+              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Helpers\\JsonData\\Users.json",
+              "RelativeDocumentMoniker": "WebAPIReact\\Helpers\\JsonData\\Users.json",
+              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Helpers\\JsonData\\Users.json",
+              "RelativeToolTip": "WebAPIReact\\Helpers\\JsonData\\Users.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-02T12:36:31.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "AcountController.cs",
+              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Controllers\\AcountController.cs",
+              "RelativeDocumentMoniker": "WebAPIReact\\Controllers\\AcountController.cs",
+              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Controllers\\AcountController.cs",
+              "RelativeToolTip": "WebAPIReact\\Controllers\\AcountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T13:57:49.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Controllers\\WeatherForecastController.cs",
@@ -147,12 +157,11 @@
               "RelativeToolTip": "WebAPIReact\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T12:40:25.895Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-02T12:40:25.895Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "JwtTokenService.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Services\\JwtTokenService.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Services\\JwtTokenService.cs",
@@ -160,12 +169,11 @@
               "RelativeToolTip": "WebAPIReact\\Services\\JwtTokenService.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAgwBwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T13:53:45.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-02T13:53:45.572Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "IJwtTokenService.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Interfaces\\IJwtTokenService.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Interfaces\\IJwtTokenService.cs",
@@ -173,12 +181,11 @@
               "RelativeToolTip": "WebAPIReact\\Interfaces\\IJwtTokenService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T13:52:52.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-02T13:52:52.065Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "DbSeeder.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\DbSeeder.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\DbSeeder.cs",
@@ -186,12 +193,11 @@
               "RelativeToolTip": "WebAPIReact\\DbSeeder.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAqwFYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T12:45:32.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-02T12:45:32.652Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ImageService.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Services\\ImageService.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Services\\ImageService.cs",
@@ -199,12 +205,11 @@
               "RelativeToolTip": "WebAPIReact\\Services\\ImageService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T12:58:12.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-02T12:58:12.132Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\appsettings.json",
               "RelativeDocumentMoniker": "WebAPIReact\\appsettings.json",
@@ -212,12 +217,11 @@
               "RelativeToolTip": "WebAPIReact\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-01T19:19:59.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-01T19:19:59.196Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "IImageService.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Interfaces\\IImageService.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Interfaces\\IImageService.cs",
@@ -229,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "UserEntity.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Entities\\Identity\\UserEntity.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Entities\\Identity\\UserEntity.cs",
@@ -241,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Data\\AppDbContext.cs",
@@ -253,7 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "RoleEntity.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Entities\\Identity\\RoleEntity.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Entities\\Identity\\RoleEntity.cs",
@@ -262,18 +266,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T19:12:35.791Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Users.json",
-              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Helpers\\JsonData\\Users.json",
-              "RelativeDocumentMoniker": "WebAPIReact\\Helpers\\JsonData\\Users.json",
-              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Helpers\\JsonData\\Users.json",
-              "RelativeToolTip": "WebAPIReact\\Helpers\\JsonData\\Users.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-02T12:36:31.918Z"
             },
             {
               "$type": "Document",
