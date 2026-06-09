@@ -5,6 +5,7 @@ import {LoginResponseModel} from "@/models/ILoginResponseModel";
 import {IRegisterResponseModel} from "@/models/IRegisterResponseModel";
 import {IRegisterModel} from "@/models/IRegisterModel";
 import {serialize} from "object-to-formdata";
+import IProfileModel from "@/models/IProfileModel";
 
 
 
@@ -33,6 +34,14 @@ export const authService= createApi({
                 }
             },
         }),
+        profile: builder.query<IProfileModel,void>({
+            query: ()=> {
+                return {
+                    url: "Me",
+                    method: "GET",
+                }
+            }
+        })
 
     })
 });
@@ -40,6 +49,7 @@ export const authService= createApi({
 export const {
     useLoginMutation,
     useRegisterMutation,
+    useProfileQuery,
 } = authService;
 
 // import {createApi} from "@reduxjs/toolkit/query/react";

@@ -5,9 +5,7 @@
     "version": "1.0.0"
   },
   "servers": [
-    {
-      "url": "http://localhost:5194"
-    }
+    { }
   ],
   "paths": {
     "/api/Account/Login": {
@@ -181,8 +179,21 @@
           }
         }
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "JWT Authorization header using the Bearer scheme. Example: \"Bearer {token}\"",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
     }
   },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ],
   "tags": [
     {
       "name": "Account"

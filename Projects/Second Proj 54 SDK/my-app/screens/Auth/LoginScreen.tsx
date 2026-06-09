@@ -3,7 +3,7 @@ import { useForm, Controller } from "react-hook-form";
 import {useRouter} from "expo-router";
 import {useState} from "react";
 import {ILoginModel} from "@/models/ILoginModel";
-import {authService} from "@/services/authService";
+import {useLoginMutation} from "@/services/authService";
 import {loginSuccess} from "@/store/reducers/authSlice";
 import {useAppDispatch} from "@/hooks/redux";
 import * as SecureStore from 'expo-secure-store';
@@ -12,7 +12,7 @@ import * as SecureStore from 'expo-secure-store';
 
 export default function LoginScreen() {
     const { control, handleSubmit } = useForm<ILoginModel>();
-    const [login, { isLoading }] = authService.useLoginMutation();
+    const [login, { isLoading }] = useLoginMutation();
     const [serverError, setServerError] = useState<string | null>(null);
     const dispatch = useAppDispatch();
     const router = useRouter();

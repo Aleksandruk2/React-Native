@@ -9,10 +9,8 @@ import {useRegisterMutation} from "@/services/authService";
 import {loginSuccess} from "@/store/reducers/authSlice";
 import {router} from "expo-router";
 
-type RegisterFormData = IRegisterModel;
-
 export default function RegisterScreen() {
-    const {control, handleSubmit, setValue, watch} = useForm<RegisterFormData>();
+    const {control, handleSubmit, setValue, watch} = useForm<IRegisterModel>();
     const imageFile = watch("imageFile");
     const dispatch = useDispatch();
     const [register, {isLoading}] = useRegisterMutation();
@@ -34,7 +32,7 @@ export default function RegisterScreen() {
 
         if (!result.canceled) {
             const asset = result.assets[0];
-
+            console.log("asset", asset);
             setValue("imageFile", {
                 uri: asset.uri,
                 name: asset.fileName ?? "avatar.jpg",
@@ -43,7 +41,7 @@ export default function RegisterScreen() {
         }
     }
 
-    const onSubmit = async  (data: RegisterFormData) => {
+    const onSubmit = async  (data: IRegisterModel) => {
         try {
             const response = await register(data).unwrap();
             const token = response.token;
