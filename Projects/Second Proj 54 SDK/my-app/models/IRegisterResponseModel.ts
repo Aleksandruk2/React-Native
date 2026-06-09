@@ -1,5 +1,3 @@
-export default interface IRegisterResponseModel {
-    username: string;
-    email: string;
-    password: string;
+export interface IRegisterResponseModel {
+    token: string;
 }

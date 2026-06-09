@@ -1,4 +1,4 @@
-﻿namespace WebAPIReact.Model.Auth;
+﻿namespace WebAPIReact.Model.Account;
 
 public class LoginModel
 {

@@ -1,9 +1,9 @@
 import {createApi} from "@reduxjs/toolkit/query/react";
 import {apiBaseQuery} from "@/utils/apiBaseQuery";
-import ILoginModel from "@/models/ILoginModel";
+import {ILoginModel} from "@/models/ILoginModel";
 import {LoginResponseModel} from "@/models/ILoginResponseModel";
-import IRegisterModel from "@/models/IRegisterModel";
-import IRegisterResponseModel from "@/models/IRegisterResponseModel";
+import {IRegisterResponseModel} from "@/models/IRegisterResponseModel";
+import {IRegisterModel} from "@/models/IRegisterModel";
 import {serialize} from "object-to-formdata";
 
 
@@ -27,7 +27,7 @@ export const authService= createApi({
             query: (model)=>{
                 const formData = serialize(model)
                 return {
-                    url: "register",
+                    url: "Register",
                     method: "POST",
                     body: formData,
                 }
@@ -39,6 +39,7 @@ export const authService= createApi({
 
 export const {
     useLoginMutation,
+    useRegisterMutation,
 } = authService;
 
 // import {createApi} from "@reduxjs/toolkit/query/react";

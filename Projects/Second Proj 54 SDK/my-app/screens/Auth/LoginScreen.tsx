@@ -2,7 +2,7 @@ import { View, Text, TextInput, Pressable } from "react-native";
 import { useForm, Controller } from "react-hook-form";
 import {useRouter} from "expo-router";
 import {useState} from "react";
-import ILoginModel from "@/models/ILoginModel";
+import {ILoginModel} from "@/models/ILoginModel";
 import {authService} from "@/services/authService";
 import {loginSuccess} from "@/store/reducers/authSlice";
 import {useAppDispatch} from "@/hooks/redux";
@@ -57,7 +57,7 @@ export default function LoginScreen() {
     }
 
     return (
-        <View className="flex-1 justify-center items-center bg-gray-100 px-6">
+        <View className="flex-1 justify-center items-center px-6">
             <Text className="text-3xl font-bold text-blue-600 mb-8">
                 Увійти в акаунт
             </Text>

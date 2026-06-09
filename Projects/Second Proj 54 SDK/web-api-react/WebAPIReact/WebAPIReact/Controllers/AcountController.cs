@@ -1,15 +1,19 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using WebAPIReact.Entities.Identity;
 using WebAPIReact.Interfaces;
-using WebAPIReact.Model.Auth;
+using WebAPIReact.Mapper;
+using WebAPIReact.Model.Account;
 
 namespace WebAPIReact.Controllers;
 
 [Route("api/[controller]/[action]")]
 [ApiController]
 public class AccountController(IJwtTokenService jwtTokenService,
-    UserManager<UserEntity> userManager) : ControllerBase
+    UserManager<UserEntity> userManager,
+    IImageService imageService,
+    UserMapper userMapper) : ControllerBase
 {
     [HttpPost]
     public async Task<IActionResult> Login([FromBody] LoginModel model)
@@ -23,5 +27,43 @@ public class AccountController(IJwtTokenService jwtTokenService,
         }
         return Unauthorized("Invalid email or password");
     }
+
+    [HttpPost]
+    [Consumes("multipart/form-data")]
+    public async Task<IActionResult> Register([FromForm] RegisterModel model)
+    {
+        var user = await userManager.FindByEmailAsync(model.Email);
+        if (user != null)
+        {
+            return BadRequest("Email is already in use");
+        }
+
+        user = userMapper.RegisterModelToUser(model);
+        if (model.ImageFile != null)
+        {
+            var imageUrl = await imageService.SaveImageAsync(model.ImageFile);
+            user.Image = imageUrl;
+        }
+
+        var result = await userManager.CreateAsync(user, model.Password);
+        if (result.Succeeded)
+        {
+            result = await userManager.AddToRoleAsync(user, Constants.Roles.User);
+            var token = await jwtTokenService.CreateTokenAsync(user);
+            return Ok(new { Token = token });
+        }
+        return BadRequest(result);
+    }
+
+    [HttpGet]
+    [Authorize]
+    public async Task<IActionResult> Profile()
+    {
+        var email = User.Claims.First()?.Value;
+        var user = await userManager.FindByEmailAsync(email);
+        ProfileModel me = userMapper.UserToMeModel(user);
+        return Ok(me);
+    }
+
 }
 
