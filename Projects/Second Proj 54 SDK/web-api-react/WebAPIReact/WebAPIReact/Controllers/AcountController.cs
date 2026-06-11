@@ -57,7 +57,7 @@ public class AccountController(IJwtTokenService jwtTokenService,
 
     [HttpGet]
     [Authorize]
-    public async Task<IActionResult> Profile()
+    public async Task<IActionResult> Me()
     {
         var email = User.Claims.First()?.Value;
         var user = await userManager.FindByEmailAsync(email);

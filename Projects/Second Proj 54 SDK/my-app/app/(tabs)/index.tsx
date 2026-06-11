@@ -1,12 +1,10 @@
-import {ActivityIndicator, StyleSheet, View, Image, Text, Pressable} from 'react-native';
-
+import {ActivityIndicator, StyleSheet, View, Image, Text, Pressable, TouchableOpacity} from 'react-native';
 import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { Redirect } from 'expo-router';
+import {Redirect, router} from 'expo-router';
 import { useAppSelector } from "@/store";
 import {useProfileQuery} from "@/services/authService";
-import {SafeAreaView} from "react-native-safe-area-context";
 import APP_ENV from "@/env";
 import {useLogout} from "@/store/hooks/useLogout";
 
@@ -23,7 +21,7 @@ export default function HomeScreen() {
 
     return (
         <>
-            <SafeAreaView className="flex-1 bg-white">
+            <>
                 <ParallaxScrollView
                     headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
                     headerImage={
@@ -65,8 +63,16 @@ export default function HomeScreen() {
                                 </ThemedText>
                             </ThemedView>
 
+                            <TouchableOpacity
+                                activeOpacity={0.8}
+                                onPress={() => router.push("/chat")}
+                                className="border-gray-300 border rounded-t-2xl py-3 mx-4 items-center"
+                            >
+                                <Text className="text-blue-500 font-semibold">Перейти в чат</Text>
+                            </TouchableOpacity>
+
                             {/* Info card */}
-                            <ThemedView className="mx-4 rounded-2xl border border-gray-200 overflow-hidden">
+                            <ThemedView className="mx-4 border border-gray-200 overflow-hidden">
 
                                 <ThemedView className="flex-row items-center gap-3 px-4 py-3 border-b border-gray-100">
                                     <ThemedText className="text-gray-400 text-xs w-28">
@@ -109,14 +115,16 @@ export default function HomeScreen() {
                         </>
                     )}
 
-                    <Pressable onPress={logout}
-                               className="border-gray-300 border rounded-lg py-3 mx-4 items-center"
+                    <TouchableOpacity
+                        activeOpacity={0.8}
+                        onPress={logout}
+                               className="border-gray-300 border rounded-b-2xl py-3 mx-4 items-center"
                     >
                         <Text className="text-red-500 font-semibold">Вийти</Text>
-                    </Pressable>
+                    </TouchableOpacity>
 
                 </ParallaxScrollView>
-            </SafeAreaView>
+            </>
         </>
     );
 }

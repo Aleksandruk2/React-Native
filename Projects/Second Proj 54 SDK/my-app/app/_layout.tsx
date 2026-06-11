@@ -9,6 +9,7 @@ import {store} from "@/store";
 import * as SecureStore from 'expo-secure-store';
 import {loginSuccess} from "@/store/reducers/authSlice";
 import {useEffect, useState} from "react";
+import {SafeAreaProvider} from "react-native-safe-area-context";
 
 export default function RootLayout() {
     const [storageReady, setStorageReady] = useState(false);
@@ -35,17 +36,20 @@ export default function RootLayout() {
 
     return (
         <>
-            <Provider store={store}>
-                <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-                    <Stack>
-                        <Stack.Screen name="(auth)" options={{headerShown: false}}/>
-                        <Stack.Screen name="(tabs)" options={{headerShown: false}}/>
-                        <Stack.Screen name="modal" options={{presentation: 'modal', title: 'Modal'}}/>
-                        <Stack.Screen name="logger" options={{headerShown: false}}/>
-                    </Stack>
-                    <StatusBar style="auto"/>
-                </ThemeProvider>
-            </Provider>
+            <SafeAreaProvider>
+                <Provider store={store}>
+                    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+                        <Stack>
+                            <Stack.Screen name="(auth)" options={{headerShown: false}}/>
+                            <Stack.Screen name="(tabs)" options={{headerShown: false}}/>
+                            <Stack.Screen name="chat" options={{ headerShown: false }} />
+                            <Stack.Screen name="modal" options={{presentation: 'modal', title: 'Modal'}}/>
+                            <Stack.Screen name="logger" options={{headerShown: false}}/>
+                        </Stack>
+                        <StatusBar style="auto"/>
+                    </ThemeProvider>
+                </Provider>
+            </SafeAreaProvider>
         </>
     );
 }

@@ -57,11 +57,11 @@ export default function RegisterScreen() {
 
     return (
         <>
-            <View className="flex-1 justify-center">
+            <View className="flex-1">
                 <StatusBar barStyle="default" />
                 <KeyboardAvoidingView
                     style={{flex: 1}}
-                    behavior={Platform.OS === "ios" ? "padding" : "height"}
+                    behavior={Platform.OS === "ios" ? "padding" : undefined}
                     keyboardVerticalOffset={Platform.OS === "ios" ? 80 : 0}
                 >
                     <ScrollView
@@ -128,6 +128,7 @@ export default function RegisterScreen() {
                                                 keyboardType="email-address"
                                                 value={value}
                                                 onChangeText={onChange}
+                                                onFocus={() => console.log("EMAIL FOCUS")}
                                                 className="w-full max-w-md bg-white rounded-lg px-4 py-3 mb-4 border border-gray-300"
                                             />
                                         )}
@@ -141,6 +142,7 @@ export default function RegisterScreen() {
                                                        secureTextEntry
                                                        value={value}
                                                        onChangeText={onChange}
+                                                       onFocus={() => console.log("PASSWORD FOCUS")}
                                                        className="w-full max-w-md bg-white rounded-lg px-4 py-3 mb-6 border border-gray-300"
                                             />
                                         )}

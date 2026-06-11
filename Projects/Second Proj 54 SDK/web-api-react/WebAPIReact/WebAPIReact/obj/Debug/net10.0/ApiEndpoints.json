@@ -17,8 +17,8 @@
   },
   {
     "ContainingType": "WebAPIReact.Controllers.AccountController",
-    "Method": "Profile",
-    "RelativePath": "api/Account/Profile",
+    "Method": "Me",
+    "RelativePath": "api/Account/Me",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

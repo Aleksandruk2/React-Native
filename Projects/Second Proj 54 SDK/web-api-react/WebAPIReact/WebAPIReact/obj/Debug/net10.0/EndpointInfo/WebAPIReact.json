@@ -79,7 +79,7 @@
         }
       }
     },
-    "/api/Account/Profile": {
+    "/api/Account/Me": {
       "get": {
         "tags": [
           "Account"

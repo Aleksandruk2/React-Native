@@ -8,6 +8,7 @@ using System.Text;
 using WebAPIReact;
 using WebAPIReact.Data;
 using WebAPIReact.Entities.Identity;
+using WebAPIReact.Hubs;
 using WebAPIReact.Interfaces;
 using WebAPIReact.Mapper;
 using WebAPIReact.Services;
@@ -19,6 +20,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IImageService, ImageService>();
 builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
 builder.Services.AddSingleton<UserMapper>();
+builder.Services.AddSignalR();
 
 // CORS
 builder.Services.AddCors(options =>
@@ -116,6 +118,10 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
+
+app.UseCors();
+
+app.MapHub<ChatHub>("/chat");
 
 // Configure the HTTP request pipeline.
 
