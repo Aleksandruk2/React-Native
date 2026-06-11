@@ -36,6 +36,7 @@ export const authService= createApi({
         }),
         profile: builder.query<IProfileModel,void>({
             query: ()=> {
+                console.log("-------- Запит на профіль.")
                 return {
                     url: "Me",
                     method: "GET",

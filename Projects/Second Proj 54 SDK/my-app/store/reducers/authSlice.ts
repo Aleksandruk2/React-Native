@@ -20,6 +20,7 @@ const user = token ? getUserFromToken(token) : null;
 
 const initialState = {
     user: user
+
 };
 
 const authSlice = createSlice({

@@ -30,7 +30,7 @@ export default function LoginScreen() {
                 dispatch(loginSuccess(result.token));
                 //Потробно зберегти глобально інформацію про користувача
                 await SecureStore.setItemAsync('accessToken',  result.token);
-                router.push("/explore");
+                router.push("/");
             }
         }
         catch (err: any) {
