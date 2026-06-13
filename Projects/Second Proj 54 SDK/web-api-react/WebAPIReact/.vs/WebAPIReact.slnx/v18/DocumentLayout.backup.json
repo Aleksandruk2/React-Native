@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\model\\chat\\usershortmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\model\\chat\\usershortmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Migrations\\20260613125759_Working is good Chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebAPIReact\\Migrations\\20260613125759_Working is good Chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\model\\chat\\usersearchmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\model\\chat\\usersearchmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\model\\chat\\sendmessagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\model\\chat\\sendmessagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\model\\chat\\inviterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\model\\chat\\inviterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\model\\chat\\chattypeitemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\model\\chat\\chattypeitemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\model\\chat\\chatmessagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\model\\chat\\chatmessagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\model\\chat\\chatlistitemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\model\\chat\\chatlistitemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\model\\chat\\chateditmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\model\\chat\\chateditmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\model\\chat\\chatcreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\model\\chat\\chatcreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\model\\account\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\model\\account\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\entities\\chat\\chatmessagereadentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\entities\\identity\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,10 +107,6 @@
       "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\model\\account\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\model\\account\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\model\\account\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -126,7 +154,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Program.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Program.cs",
@@ -141,27 +169,118 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\appsettings.json",
-              "RelativeDocumentMoniker": "WebAPIReact\\appsettings.json",
-              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\appsettings.json",
-              "RelativeToolTip": "WebAPIReact\\appsettings.json",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-13T13:00:49.148Z",
+              "Title": "UserShortModel.cs",
+              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Chat\\UserShortModel.cs",
+              "RelativeDocumentMoniker": "WebAPIReact\\Model\\Chat\\UserShortModel.cs",
+              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Chat\\UserShortModel.cs",
+              "RelativeToolTip": "WebAPIReact\\Model\\Chat\\UserShortModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T13:15:50.741Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "20260613125759_Working is good Chat.cs",
-              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Migrations\\20260613125759_Working is good Chat.cs",
-              "RelativeDocumentMoniker": "WebAPIReact\\Migrations\\20260613125759_Working is good Chat.cs",
-              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Migrations\\20260613125759_Working is good Chat.cs",
-              "RelativeToolTip": "WebAPIReact\\Migrations\\20260613125759_Working is good Chat.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Title": "UserSearchModel.cs",
+              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Chat\\UserSearchModel.cs",
+              "RelativeDocumentMoniker": "WebAPIReact\\Model\\Chat\\UserSearchModel.cs",
+              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Chat\\UserSearchModel.cs",
+              "RelativeToolTip": "WebAPIReact\\Model\\Chat\\UserSearchModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T12:57:59.163Z",
+              "WhenOpened": "2026-06-13T13:14:51.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SendMessageModel.cs",
+              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Chat\\SendMessageModel.cs",
+              "RelativeDocumentMoniker": "WebAPIReact\\Model\\Chat\\SendMessageModel.cs",
+              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Chat\\SendMessageModel.cs",
+              "RelativeToolTip": "WebAPIReact\\Model\\Chat\\SendMessageModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T13:13:35.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InviteRequest.cs",
+              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Chat\\InviteRequest.cs",
+              "RelativeDocumentMoniker": "WebAPIReact\\Model\\Chat\\InviteRequest.cs",
+              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Chat\\InviteRequest.cs",
+              "RelativeToolTip": "WebAPIReact\\Model\\Chat\\InviteRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T13:13:08.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChatTypeItemModel.cs",
+              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Chat\\ChatTypeItemModel.cs",
+              "RelativeDocumentMoniker": "WebAPIReact\\Model\\Chat\\ChatTypeItemModel.cs",
+              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Chat\\ChatTypeItemModel.cs",
+              "RelativeToolTip": "WebAPIReact\\Model\\Chat\\ChatTypeItemModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T13:12:54.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChatMessageModel.cs",
+              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Chat\\ChatMessageModel.cs",
+              "RelativeDocumentMoniker": "WebAPIReact\\Model\\Chat\\ChatMessageModel.cs",
+              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Chat\\ChatMessageModel.cs",
+              "RelativeToolTip": "WebAPIReact\\Model\\Chat\\ChatMessageModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T13:11:04.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ChatListItemModel.cs",
+              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Chat\\ChatListItemModel.cs",
+              "RelativeDocumentMoniker": "WebAPIReact\\Model\\Chat\\ChatListItemModel.cs",
+              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Chat\\ChatListItemModel.cs",
+              "RelativeToolTip": "WebAPIReact\\Model\\Chat\\ChatListItemModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T13:10:18.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChatEditModel.cs",
+              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Chat\\ChatEditModel.cs",
+              "RelativeDocumentMoniker": "WebAPIReact\\Model\\Chat\\ChatEditModel.cs",
+              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Chat\\ChatEditModel.cs",
+              "RelativeToolTip": "WebAPIReact\\Model\\Chat\\ChatEditModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T13:08:07.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChatCreateModel.cs",
+              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Chat\\ChatCreateModel.cs",
+              "RelativeDocumentMoniker": "WebAPIReact\\Model\\Chat\\ChatCreateModel.cs",
+              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Chat\\ChatCreateModel.cs",
+              "RelativeToolTip": "WebAPIReact\\Model\\Chat\\ChatCreateModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T13:07:04.804Z",
               "EditorCaption": ""
             },
             {
@@ -170,7 +289,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Account\\LoginModel.cs",
+              "RelativeDocumentMoniker": "WebAPIReact\\Model\\Account\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Account\\LoginModel.cs",
+              "RelativeToolTip": "WebAPIReact\\Model\\Account\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T13:55:24.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ChatMessageReadEntity.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Entities\\Chat\\ChatMessageReadEntity.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Entities\\Chat\\ChatMessageReadEntity.cs",
@@ -178,12 +310,11 @@
               "RelativeToolTip": "WebAPIReact\\Entities\\Chat\\ChatMessageReadEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T12:44:32.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-13T12:44:32.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "UserEntity.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Entities\\Identity\\UserEntity.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Entities\\Identity\\UserEntity.cs",
@@ -191,12 +322,11 @@
               "RelativeToolTip": "WebAPIReact\\Entities\\Identity\\UserEntity.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAqwAwAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T19:13:38.909Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-01T19:13:38.909Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Data\\AppDbContext.cs",
@@ -204,12 +334,11 @@
               "RelativeToolTip": "WebAPIReact\\Data\\AppDbContext.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAiwEoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T19:15:32.263Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-01T19:15:32.263Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "ChatMessageEntity.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Entities\\Chat\\ChatMessageEntity.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Entities\\Chat\\ChatMessageEntity.cs",
@@ -217,12 +346,11 @@
               "RelativeToolTip": "WebAPIReact\\Entities\\Chat\\ChatMessageEntity.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T12:38:16.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-13T12:38:16.946Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "ChatUserEntity.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Entities\\Chat\\ChatUserEntity.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Entities\\Chat\\ChatUserEntity.cs",
@@ -230,12 +358,11 @@
               "RelativeToolTip": "WebAPIReact\\Entities\\Chat\\ChatUserEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T12:39:25.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-13T12:39:25.226Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "ChatEntity.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Entities\\Chat\\ChatEntity.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Entities\\Chat\\ChatEntity.cs",
@@ -243,12 +370,11 @@
               "RelativeToolTip": "WebAPIReact\\Entities\\Chat\\ChatEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T12:36:26.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-13T12:36:26.839Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "ChatTypeEntity.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Entities\\Chat\\ChatTypeEntity.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Entities\\Chat\\ChatTypeEntity.cs",
@@ -256,12 +382,11 @@
               "RelativeToolTip": "WebAPIReact\\Entities\\Chat\\ChatTypeEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T12:35:27.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-13T12:35:27.982Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Entities\\BaseEntity.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Entities\\BaseEntity.cs",
@@ -269,12 +394,11 @@
               "RelativeToolTip": "WebAPIReact\\Entities\\BaseEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T12:33:18.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-13T12:33:18.05Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "UserMapper.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Mapper\\UserMapper.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Mapper\\UserMapper.cs",
@@ -282,12 +406,11 @@
               "RelativeToolTip": "WebAPIReact\\Mapper\\UserMapper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-04T12:19:53.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-04T12:19:53.251Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "AcountController.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Controllers\\AcountController.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Controllers\\AcountController.cs",
@@ -299,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "Users.json",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Helpers\\JsonData\\Users.json",
               "RelativeDocumentMoniker": "WebAPIReact\\Helpers\\JsonData\\Users.json",
@@ -311,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "ChatHub.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Hubs\\ChatHub.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Hubs\\ChatHub.cs",
@@ -319,12 +442,11 @@
               "RelativeToolTip": "WebAPIReact\\Hubs\\ChatHub.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T12:19:25.934Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-11T12:19:25.934Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "ProfileModel.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Account\\ProfileModel.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Model\\Account\\ProfileModel.cs",
@@ -336,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "JwtTokenService.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Services\\JwtTokenService.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Services\\JwtTokenService.cs",
@@ -348,7 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "RegisterModel.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Account\\RegisterModel.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Model\\Account\\RegisterModel.cs",
@@ -360,19 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "LoginModel.cs",
-              "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Account\\LoginModel.cs",
-              "RelativeDocumentMoniker": "WebAPIReact\\Model\\Account\\LoginModel.cs",
-              "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Model\\Account\\LoginModel.cs",
-              "RelativeToolTip": "WebAPIReact\\Model\\Account\\LoginModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T13:55:24.332Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "DbSeeder.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\DbSeeder.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\DbSeeder.cs",
@@ -384,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "WebAPIReact.csproj",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\WebAPIReact.csproj",
               "RelativeDocumentMoniker": "WebAPIReact\\WebAPIReact.csproj",
@@ -396,7 +506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Controllers\\WeatherForecastController.cs",
@@ -408,7 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "IJwtTokenService.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Interfaces\\IJwtTokenService.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Interfaces\\IJwtTokenService.cs",
@@ -420,7 +530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "ImageService.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Services\\ImageService.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Services\\ImageService.cs",
@@ -432,7 +542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 31,
               "Title": "IImageService.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Interfaces\\IImageService.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Interfaces\\IImageService.cs",
@@ -444,7 +554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 32,
               "Title": "RoleEntity.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Entities\\Identity\\RoleEntity.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Entities\\Identity\\RoleEntity.cs",
@@ -456,7 +566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 33,
               "Title": "UserRoleEntity.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Entities\\Identity\\UserRoleEntity.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Entities\\Identity\\UserRoleEntity.cs",
@@ -468,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 34,
               "Title": "Roles.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Constants\\Roles.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Constants\\Roles.cs",
