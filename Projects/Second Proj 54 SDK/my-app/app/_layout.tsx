@@ -1,5 +1,5 @@
 import {DarkTheme, DefaultTheme, ThemeProvider} from '@react-navigation/native';
-import {Stack} from 'expo-router';
+import {Stack, usePathname} from 'expo-router';
 import {StatusBar} from 'expo-status-bar';
 import 'react-native-reanimated';
 import '../global.css';
@@ -8,11 +8,16 @@ import {Provider} from "react-redux";
 import {store} from "@/store";
 import * as SecureStore from 'expo-secure-store';
 import {loginSuccess} from "@/store/reducers/authSlice";
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {SafeAreaProvider} from "react-native-safe-area-context";
+import {ActivityIndicator, View, StyleSheet} from "react-native";
+
 
 export default function RootLayout() {
     const [storageReady, setStorageReady] = useState(false);
+    const colorScheme = useColorScheme();
+    const pathname = usePathname();
+    console.log('Назва поточного шляху:', pathname);
 
     useEffect(() => {
         initStore().then(() => {
@@ -28,10 +33,12 @@ export default function RootLayout() {
         }
     }
 
-    const colorScheme = useColorScheme();
-
     if (!storageReady) {
-        return null;
+        return (
+            <View style={styles.loadingContainer}>
+                <ActivityIndicator size="large" color="#0066cc" />
+            </View>
+        );
     }
 
     return (
@@ -53,3 +60,11 @@ export default function RootLayout() {
         </>
     );
 }
+
+const styles = StyleSheet.create({
+    loadingContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    }
+})

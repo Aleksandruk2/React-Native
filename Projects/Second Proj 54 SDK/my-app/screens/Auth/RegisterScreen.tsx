@@ -8,12 +8,14 @@ import {useDispatch} from "react-redux";
 import {useRegisterMutation} from "@/services/authService";
 import {loginSuccess} from "@/store/reducers/authSlice";
 import {router} from "expo-router";
+import {useColorScheme} from "@/hooks/use-color-scheme";
 
 export default function RegisterScreen() {
     const {control, handleSubmit, setValue, watch} = useForm<IRegisterModel>();
     const imageFile = watch("imageFile");
     const dispatch = useDispatch();
     const [register, {isLoading}] = useRegisterMutation();
+    const colorScheme = useColorScheme();
 
     const pickImage = async () => {
         console.log("Pick image");
@@ -58,10 +60,9 @@ export default function RegisterScreen() {
     return (
         <>
             <View className="flex-1">
-                <StatusBar barStyle="default" />
                 <KeyboardAvoidingView
                     style={{flex: 1}}
-                    behavior={Platform.OS === "ios" ? "padding" : undefined}
+                    behavior={Platform.OS === "ios" ? "padding" : "height"}
                     keyboardVerticalOffset={Platform.OS === "ios" ? 80 : 0}
                 >
                     <ScrollView
@@ -91,14 +92,18 @@ export default function RegisterScreen() {
                                         name="firstName"
                                         rules={{required: "Ім’я обов’язкове"}}
                                         render={({field: {onChange, value}}) => (
-                                            <TextInput
-                                                placeholder="Ім’я"
-                                                value={value}
-                                                onChangeText={onChange}
-                                                className="w-full max-w-md bg-white dark:bg-zinc-800
-                                               text-black dark:text-white
-                                               rounded-lg px-4 py-3 mb-4
-                                               border border-gray-300 dark:border-zinc-700"
+                                            <TextInput placeholder="Ім’я"
+                                                       placeholderTextColor={
+                                                           colorScheme === "dark"
+                                                               ? "#A1A1AA" // zinc-400
+                                                               : "#6B7280" // gray-500
+                                                       }
+                                                       value={value}
+                                                       onChangeText={onChange}
+                                                       className="w-full max-w-md bg-white dark:bg-zinc-800
+                                                                  text-black dark:text-gray-200
+                                                                  rounded-lg px-4 py-3 mb-4
+                                                                  border border-gray-300 dark:border-zinc-700"
                                             />
                                         )}
                             />
@@ -107,14 +112,18 @@ export default function RegisterScreen() {
                                         name="lastName"
                                         rules={{required: "Прізвище обов’язкове"}}
                                         render={({field: {onChange, value}}) => (
-                                            <TextInput
-                                                placeholder="Прізвище"
-                                                value={value}
-                                                onChangeText={onChange}
-                                                className="w-full max-w-md bg-white dark:bg-zinc-800
-                                               text-black dark:text-white
-                                               rounded-lg px-4 py-3 mb-4
-                                               border border-gray-300 dark:border-zinc-700"
+                                            <TextInput placeholder="Прізвище"
+                                                       placeholderTextColor={
+                                                           colorScheme === "dark"
+                                                               ? "#A1A1AA" // zinc-400
+                                                               : "#6B7280" // gray-500
+                                                       }
+                                                       value={value}
+                                                       onChangeText={onChange}
+                                                       className="w-full max-w-md bg-white dark:bg-zinc-800
+                                                                  text-black dark:text-gray-200
+                                                                  rounded-lg px-4 py-3 mb-4
+                                                                  border border-gray-300 dark:border-zinc-700"
                                             />
                                         )}
                             />
@@ -123,13 +132,19 @@ export default function RegisterScreen() {
                                         name="email"
                                         rules={{required: "Email обов’язковий"}}
                                         render={({field: {onChange, value}}) => (
-                                            <TextInput
-                                                placeholder="Email"
-                                                keyboardType="email-address"
-                                                value={value}
-                                                onChangeText={onChange}
-                                                onFocus={() => console.log("EMAIL FOCUS")}
-                                                className="w-full max-w-md bg-white rounded-lg px-4 py-3 mb-4 border border-gray-300"
+                                            <TextInput placeholder="Email"
+                                                       placeholderTextColor={
+                                                           colorScheme === "dark"
+                                                               ? "#A1A1AA" // zinc-400
+                                                               : "#6B7280" // gray-500
+                                                       }
+                                                       keyboardType="email-address"
+                                                       value={value}
+                                                       onChangeText={onChange}
+                                                       className="w-full max-w-md bg-white dark:bg-zinc-800
+                                                                  text-black dark:text-gray-200
+                                                                  rounded-lg px-4 py-3 mb-4
+                                                                  border border-gray-300 dark:border-zinc-700"
                                             />
                                         )}
                             />
@@ -139,11 +154,18 @@ export default function RegisterScreen() {
                                         rules={{required: "Пароль обов’язковий"}}
                                         render={({field: {onChange, value}}) => (
                                             <TextInput placeholder="Пароль"
+                                                       placeholderTextColor={
+                                                           colorScheme === "dark"
+                                                               ? "#A1A1AA" // zinc-400
+                                                               : "#6B7280" // gray-500
+                                                       }
                                                        secureTextEntry
                                                        value={value}
                                                        onChangeText={onChange}
-                                                       onFocus={() => console.log("PASSWORD FOCUS")}
-                                                       className="w-full max-w-md bg-white rounded-lg px-4 py-3 mb-6 border border-gray-300"
+                                                       className="w-full max-w-md bg-white dark:bg-zinc-800
+                                                                  text-black dark:text-gray-200
+                                                                  rounded-lg px-4 py-3 mb-4
+                                                                  border border-gray-300 dark:border-zinc-700"
                                             />
                                         )}
                             />
@@ -151,9 +173,9 @@ export default function RegisterScreen() {
                             <Pressable
                                 disabled={isLoading}
                                 onPress={handleSubmit(onSubmit)}
-                                className={`${isLoading ? "bg-blue-400" : "bg-blue-500"} w-full max-w-md  rounded-lg py-3 items-center mb-3`}
+                                className={`${isLoading ? "bg-blue-400 dark:bg-blue-700" : "bg-blue-500 dark:bg-blue-900"} border dark:border-blue-700 border-blue-600 w-full rounded-lg py-3 items-center mb-3`}
                             >
-                                <Text className="text-white font-semibold">
+                                <Text className="text-white dark:text-gray-100 font-semibold">
                                     {isLoading ? "Завантаження..." : "Зареєструватися"}
                                 </Text>
                             </Pressable>

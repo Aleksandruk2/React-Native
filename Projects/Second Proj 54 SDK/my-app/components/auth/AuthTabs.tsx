@@ -23,8 +23,8 @@ export function AuthTabs() {
     if (isKeyboardVisible) return null;
 
     return (
-        <View className="pb-6 p-1 bg-zinc-100 rounded-2xl dark:bg-zinc-900">
-            <View className="flex-row rounded-2xl p-1 gap-2">
+        <View className="p-1 bg-zinc-100 rounded-b-2xl dark:bg-zinc-900">
+            <View className="flex-row rounded-2xl">
                 <AuthTab
                     label="Вхід"
                     emoji="🔐"
@@ -41,9 +41,9 @@ export function AuthTabs() {
 
             <TouchableOpacity
                 onPress={() => router.replace("/")}
-                className="mt-3 items-center"
+                className="items-center"
             >
-                <Text className="text-emerald-600 dark:text-emerald-400 font-semibold">
+                <Text className="text-emerald-700 dark:text-emerald-400 bg-emerald-200 dark:bg-emerald-800 rounded-b-2xl w-full py-3 text-center font-semibold">
                     🏠 На головну
                 </Text>
             </TouchableOpacity>
