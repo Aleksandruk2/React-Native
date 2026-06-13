@@ -62,6 +62,127 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebAPIReact.Controllers.ChatsController",
+    "Method": "CreateChat",
+    "RelativePath": "api/Chats",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebAPIReact.Model.Chat.ChatCreateModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPIReact.Controllers.ChatsController",
+    "Method": "GetChatMessages",
+    "RelativePath": "api/Chats/{chatId}/messages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPIReact.Controllers.ChatsController",
+    "Method": "AmIAdmin",
+    "RelativePath": "api/Chats/am-i-admin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPIReact.Controllers.ChatsController",
+    "Method": "EditChat",
+    "RelativePath": "api/Chats/edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebAPIReact.Model.Chat.ChatEditModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPIReact.Controllers.ChatsController",
+    "Method": "GenerateInvite",
+    "RelativePath": "api/Chats/invite-link",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebAPIReact.Model.Chat.InviteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPIReact.Controllers.ChatsController",
+    "Method": "GetMyChats",
+    "RelativePath": "api/Chats/my",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPIReact.Controllers.ChatsController",
+    "Method": "GetChatTypes",
+    "RelativePath": "api/Chats/types",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPIReact.Controllers.ChatsController",
+    "Method": "GetUsers",
+    "RelativePath": "api/Chats/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ChatId",
+        "Type": "System.Nullable\u00601[[System.Int64, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebAPIReact.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

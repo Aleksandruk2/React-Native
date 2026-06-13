@@ -1,12 +1,13 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using WebAPIReact.Constants;
-using WebAPIReact.Data;
-using WebAPIReact.Entities.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
+using WebAPIReact.Constants;
+using WebAPIReact.Data;
+using WebAPIReact.Entities.Chat;
+using WebAPIReact.Entities.Identity;
 using WebAPIReact.Interfaces;
-using WebAPIReact.Model.Seeder;
 using WebAPIReact.Mapper;
+using WebAPIReact.Model.Seeder;
 
 
 namespace WebAPIReact;
@@ -86,6 +87,18 @@ public static class DbSeeder
             {
                 Console.WriteLine("Not Found File Users.json");
             }
+        }
+
+        if (!context.ChatTypes.Any())
+        {
+            var types = ChatTypes.All
+                .Select(x => new ChatTypeEntity
+                {
+                    TypeName = x
+                }).ToList();
+
+            context.ChatTypes.AddRange(types);
+            await context.SaveChangesAsync();
         }
     }
 }
