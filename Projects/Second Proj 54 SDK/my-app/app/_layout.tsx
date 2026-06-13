@@ -16,8 +16,9 @@ import {ActivityIndicator, View, StyleSheet} from "react-native";
 export default function RootLayout() {
     const [storageReady, setStorageReady] = useState(false);
     const colorScheme = useColorScheme();
-    const pathname = usePathname();
-    console.log('Назва поточного шляху:', pathname);
+
+    // const pathname = usePathname();
+    // console.log('Назва поточного шляху:', pathname);
 
     useEffect(() => {
         initStore().then(() => {
@@ -47,8 +48,8 @@ export default function RootLayout() {
                 <Provider store={store}>
                     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
                         <Stack>
-                            <Stack.Screen name="(auth)" options={{headerShown: false}}/>
                             <Stack.Screen name="(tabs)" options={{headerShown: false}}/>
+                            <Stack.Screen name="(auth)" options={{headerShown: false}}/>
                             <Stack.Screen name="chat" options={{ headerShown: false }} />
                             <Stack.Screen name="modal" options={{presentation: 'modal', title: 'Modal'}}/>
                             <Stack.Screen name="logger" options={{headerShown: false}}/>

@@ -128,12 +128,6 @@ export default function LoginScreen() {
                             >
                                 <Text className="text-white dark:text-gray-100 font-semibold">Логер</Text>
                             </Pressable>
-                            <Pressable onPress={() => {
-                                console.log("Логін : Назва поточної сторінки:", pathname)}}
-                                       className="bg-blue-500 dark:bg-blue-900 border dark:border-blue-700 border-blue-600 w-full rounded-lg py-3 items-center mb-3"
-                            >
-                                <Text className="text-white dark:text-gray-100 font-semibold">Поточна сторінка LOG</Text>
-                            </Pressable>
                         </View>
                     </ScrollView>
                 </KeyboardAvoidingView>

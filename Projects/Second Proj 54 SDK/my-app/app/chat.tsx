@@ -100,7 +100,7 @@ export default function Chat() {
         <SafeAreaView style={styles.container} edges={['top', 'left', 'right']}>
             <KeyboardAvoidingView
                 style={{ flex: 1 }}
-                behavior={Platform.OS === "ios" ? "padding" : undefined}
+                behavior={Platform.OS === "ios" ? "padding" : "height"}
             >
                 {/* Header Block */}
                 <View style={styles.header} className="flex-row items-center justify-between">

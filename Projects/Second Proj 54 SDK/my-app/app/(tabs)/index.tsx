@@ -13,7 +13,7 @@ export default function HomeScreen() {
     const { data: profile, isLoading, isError } = useProfileQuery(undefined, {skip: !user});
     const logout = useLogout();
 
-    console.log("auth user info:", user);
+    // console.log("auth user info:", user);
 
     if (!user) {
         return <Redirect href='/login' />;
