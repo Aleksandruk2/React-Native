@@ -11,7 +11,7 @@ import IProfileModel from "@/models/IProfileModel";
 
 export const authService= createApi({
     reducerPath: 'accountApi',
-    baseQuery: apiBaseQuery("Account/"),
+    baseQuery: apiBaseQuery("Account"),
     tagTypes: ['Auth'],
     endpoints: (builder) => ({
         login: builder.mutation<LoginResponseModel, ILoginModel>({

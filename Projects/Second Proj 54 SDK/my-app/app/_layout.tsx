@@ -17,8 +17,8 @@ export default function RootLayout() {
     const [storageReady, setStorageReady] = useState(false);
     const colorScheme = useColorScheme();
 
-    // const pathname = usePathname();
-    // console.log('Назва поточного шляху:', pathname);
+    const pathname = usePathname();
+    console.log('Назва поточного шляху:', pathname);
 
     useEffect(() => {
         initStore().then(() => {
@@ -50,6 +50,7 @@ export default function RootLayout() {
                         <Stack>
                             <Stack.Screen name="(tabs)" options={{headerShown: false}}/>
                             <Stack.Screen name="(auth)" options={{headerShown: false}}/>
+                            <Stack.Screen name="mychat" options={{ headerShown: false }} />
                             <Stack.Screen name="chat" options={{ headerShown: false }} />
                             <Stack.Screen name="modal" options={{presentation: 'modal', title: 'Modal'}}/>
                             <Stack.Screen name="logger" options={{headerShown: false}}/>

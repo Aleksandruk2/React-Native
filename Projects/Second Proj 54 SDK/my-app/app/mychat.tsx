@@ -13,9 +13,10 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 import { HubConnectionBuilder, HubConnection, LogLevel } from "@microsoft/signalr";
 import {router} from "expo-router";
+import APP_ENV from "@/env";
 
-// const HUB_URL ='http://192.168.0.143:5207/chathub';
-const HUB_URL ='https://p32-native.itstep.click/chat';
+// const HUB_URL ='https://p32-native.itstep.click/chat';
+const HUB_URL = APP_ENV.API_BASE_URL + "/chat";
 
 interface Message {
     id: string;
@@ -23,7 +24,7 @@ interface Message {
     timestamp: string;
 }
 
-export default function Chat() {
+export default function Mychat() {
     const [connection, setConnection] = useState<HubConnection | null>(null);
     const [isConnected, setIsConnected] = useState<boolean>(false);
     const [isLoading, setIsLoading] = useState<boolean>(true);
