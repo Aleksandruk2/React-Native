@@ -38,7 +38,7 @@ public partial class ChatMapper
     // Прості маппінги
     public partial ChatTypeItemModel ToChatTypeItemModel(ChatTypeEntity src);
 
-    [MapPropertyFromSource(nameof(UserShortModel.Name), Use = nameof(MapUserName))]
+    [MapPropertyFromSource(nameof(UserShortModel.Name), Use = nameof(MapFullName))]
     public partial UserShortModel ToUserShortModel(UserEntity src);
 
     [MapProperty(nameof(ChatEntity.Id), nameof(ChatListItemModel.ChatId))]

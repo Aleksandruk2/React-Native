@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\mapper\\chatmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\mapper\\chatmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\webapireact.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\webapireact.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\mapper\\chatmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|solutionrelative:webapireact\\mapper\\chatmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D722103-90ED-793E-CB35-D8B7E19DE620}|WebAPIReact\\WebAPIReact.csproj|c:\\users\\my data\\data\\react-native\\projects\\second proj 54 sdk\\web-api-react\\webapireact\\webapireact\\controllers\\acountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -182,11 +182,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Program.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Program.cs",
@@ -199,17 +199,20 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WebAPIReact",
+              "DocumentIndex": 2,
+              "Title": "WebAPIReact.csproj",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\WebAPIReact.csproj",
               "RelativeDocumentMoniker": "WebAPIReact\\WebAPIReact.csproj",
               "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\WebAPIReact.csproj",
               "RelativeToolTip": "WebAPIReact\\WebAPIReact.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-06-13T14:56:56.221Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-13T14:56:56.221Z"
             },
             {
               "$type": "Document",
@@ -221,18 +224,17 @@
               "RelativeToolTip": "WebAPIReact\\Controllers\\AcountController.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T13:57:49.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-02T13:57:49.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ChatMapper.cs",
               "DocumentMoniker": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Mapper\\ChatMapper.cs",
               "RelativeDocumentMoniker": "WebAPIReact\\Mapper\\ChatMapper.cs",
               "ToolTip": "C:\\Users\\My data\\data\\React-Native\\Projects\\Second Proj 54 SDK\\web-api-react\\WebAPIReact\\WebAPIReact\\Mapper\\ChatMapper.cs",
               "RelativeToolTip": "WebAPIReact\\Mapper\\ChatMapper.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAqwCgAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-13T13:52:42.576Z",
               "EditorCaption": ""
@@ -247,8 +249,7 @@
               "RelativeToolTip": "WebAPIReact\\Model\\Account\\LoginModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T13:55:24.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-02T13:55:24.332Z"
             },
             {
               "$type": "Document",
@@ -260,8 +261,7 @@
               "RelativeToolTip": "WebAPIReact\\DbSeeder.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAgwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T12:45:32.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-02T12:45:32.652Z"
             },
             {
               "$type": "Document",
@@ -273,8 +273,7 @@
               "RelativeToolTip": "WebAPIReact\\Constants\\ChatTypes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T14:29:57.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-13T14:29:57.641Z"
             },
             {
               "$type": "Document",
@@ -286,8 +285,7 @@
               "RelativeToolTip": "WebAPIReact\\Services\\InviteTokenService.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T14:26:20.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-13T14:26:20.371Z"
             },
             {
               "$type": "Document",
@@ -299,8 +297,7 @@
               "RelativeToolTip": "WebAPIReact\\Controllers\\ChatsController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAowBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T14:23:22.387Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-13T14:23:22.387Z"
             },
             {
               "$type": "Document",
@@ -312,8 +309,7 @@
               "RelativeToolTip": "WebAPIReact\\Services\\ChatService.cs",
               "ViewState": "AgIAAFwAAAAAAAAAAAAAAGoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T14:09:45.086Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-13T14:09:45.086Z"
             },
             {
               "$type": "Document",
@@ -325,8 +321,7 @@
               "RelativeToolTip": "WebAPIReact\\Services\\IdentityService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T13:46:17.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-13T13:46:17.845Z"
             },
             {
               "$type": "Document",
@@ -338,8 +333,7 @@
               "RelativeToolTip": "WebAPIReact\\Interfaces\\IIdentityService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T13:43:27.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-13T13:43:27.169Z"
             },
             {
               "$type": "Document",
@@ -351,12 +345,7 @@
               "RelativeToolTip": "WebAPIReact\\Interfaces\\IChatService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T13:17:33.087Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2026-06-13T13:17:33.087Z"
             },
             {
               "$type": "Document",
@@ -368,8 +357,7 @@
               "RelativeToolTip": "WebAPIReact\\Model\\Chat\\UserShortModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-13T13:15:50.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-13T13:15:50.741Z"
             },
             {
               "$type": "Document",
