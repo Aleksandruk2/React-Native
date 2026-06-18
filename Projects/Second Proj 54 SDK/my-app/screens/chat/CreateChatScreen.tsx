@@ -6,7 +6,7 @@ import {
     TouchableOpacity,
     ScrollView,
     KeyboardAvoidingView,
-    Platform,
+    Platform, ActivityIndicator,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { LinearGradient } from "expo-linear-gradient";
@@ -22,15 +22,16 @@ import {
 } from "@/services/chatService";
 
 import { IChatCreate } from "@/models/chat/IChatCreate";
+import {ThemedView} from "@/components/themed-view";
 
 export default function CreateChatScreen() {
-    const { data: chatTypes } = useGetChatTypesQuery();
-    const { data: users } = useGetUsersQuery({});
+    const { data: chatTypes, isLoading: isTypesLoading } = useGetChatTypesQuery();
+    const { data: users, isLoading: isUsersLoading } = useGetUsersQuery({});
     const [createChat, { isLoading }] = useCreateChatMutation();
 
     const { form, setForm, onChange } = useForm<IChatCreate>({
         name: "",
-        chatTypeId: 0,
+        chatTypeId: 2,
         userIds: [],
     });
 
@@ -64,7 +65,7 @@ export default function CreateChatScreen() {
         try {
             await createChat(form).unwrap();
             //Після створення ми приєднуємося в ЧАТ
-            //--------------------------------router.replace(`/chat/join`);
+            router.replace(`/chat/join`);
         } catch (e) {
             console.log("Create chat error:", e);
         }
@@ -112,35 +113,48 @@ export default function CreateChatScreen() {
                                 Тип чату
                             </Text>
 
-                            <View className="flex-row gap-3">
-                                {chatTypes?.map(type => (
-                                    <TouchableOpacity
-                                        key={type.id}
-                                        onPress={() =>
-                                            setForm(prev => ({
-                                                ...prev,
-                                                chatTypeId: type.id,
-                                                userIds: [],
-                                            }))
-                                        }
-                                        className={`px-4 py-3 rounded-xl border
-                                            ${form.chatTypeId === type.id
-                                            ? "bg-emerald-500 border-emerald-500"
-                                            : "border-zinc-300 dark:border-zinc-700"}
-                                        `}
-                                    >
-                                        <Text
-                                            className={
-                                                form.chatTypeId === type.id
-                                                    ? "text-white font-semibold"
-                                                    : "text-zinc-700 dark:text-zinc-300"
+                            {isTypesLoading ?
+                                <View>
+                                    {<ThemedView className="flex-1 items-center justify-center py-10">
+                                        <ActivityIndicator size="large"/>
+                                    </ThemedView>}
+                                </View> :
+                                <View className="flex-row gap-3">
+                                    {chatTypes?.map(type => (
+                                        <TouchableOpacity
+                                            key={type.id}
+                                            onPress={() =>
+                                                setForm(prev => ({
+                                                    ...prev,
+                                                    chatTypeId: type.id,
+                                                    userIds: [],
+                                                }))
                                             }
+                                            className={`px-4 py-3 rounded-xl border
+                                            ${form.chatTypeId === type.id
+                                                ? "bg-emerald-500 border-emerald-500"
+                                                : "border-zinc-300 dark:border-zinc-700"}
+                                        `}
                                         >
-                                            {type.typeName}
-                                        </Text>
-                                    </TouchableOpacity>
-                                ))}
-                            </View>
+                                            <Text
+                                                className={
+                                                    form.chatTypeId === type.id
+                                                        ? "text-white font-semibold"
+                                                        : "text-zinc-700 dark:text-zinc-300"
+                                                }
+                                            >
+                                                {type.typeName}
+                                            </Text>
+                                        </TouchableOpacity>
+                                    ))}
+                                </View>
+                            }
+
+                            {isPrivate && (
+                                <Text className="text-xs text-zinc-400 mt-2">
+                                    Приватний чат — лише один учасник
+                                </Text>
+                            )}
                         </View>
 
                         <View className="mt-8">
@@ -148,39 +162,40 @@ export default function CreateChatScreen() {
                                 Учасники
                             </Text>
 
-                            <View className="gap-2">
-                                {users?.map(user => {
-                                    const selected = form.userIds.includes(user.id);
+                            {isUsersLoading ?
+                                <View>
+                                    {<ThemedView className="flex-1 items-center justify-center py-10">
+                                        <ActivityIndicator size="large"/>
+                                    </ThemedView>}
+                                </View> :
+                                <View className="gap-2">
+                                    {users?.map(user => {
+                                        const selected = form.userIds.includes(user.id);
 
-                                    return (
-                                        <TouchableOpacity
-                                            key={user.id}
-                                            onPress={() => toggleUser(user.id)}
-                                            className={`px-4 py-3 rounded-xl border
+                                        return (
+                                            <TouchableOpacity
+                                                key={user.id}
+                                                onPress={() => toggleUser(user.id)}
+                                                className={`px-4 py-3 rounded-xl border
                                                 ${selected
-                                                ? "bg-emerald-500 border-emerald-500"
-                                                : "border-zinc-300 dark:border-zinc-700"}
+                                                    ? "bg-emerald-500 border-emerald-500"
+                                                    : "border-zinc-300 dark:border-zinc-700"}
                                             `}
-                                        >
-                                            <Text
-                                                className={
-                                                    selected
-                                                        ? "text-white font-semibold"
-                                                        : "text-zinc-800 dark:text-zinc-200"
-                                                }
                                             >
-                                                {user.name}
-                                            </Text>
-                                        </TouchableOpacity>
-                                    );
-                                })}
-                            </View>
-
-                            {isPrivate && (
-                                <Text className="text-xs text-zinc-400 mt-2">
-                                    Приватний чат — лише один учасник
-                                </Text>
-                            )}
+                                                <Text
+                                                    className={
+                                                        selected
+                                                            ? "text-white font-semibold"
+                                                            : "text-zinc-800 dark:text-zinc-200"
+                                                    }
+                                                >
+                                                    {user.name}
+                                                </Text>
+                                            </TouchableOpacity>
+                                        );
+                                    })}
+                                </View>
+                            }
                         </View>
 
                         <View className="mt-10">

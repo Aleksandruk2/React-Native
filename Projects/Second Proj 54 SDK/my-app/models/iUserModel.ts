@@ -4,4 +4,5 @@ export default interface IUserModel {
     roles: string[],
     image: string,
     exp: number,
+    token: string,
 }

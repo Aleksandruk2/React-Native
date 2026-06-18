@@ -138,7 +138,7 @@ const ChatWindow: FC<ChatWindowProps> = ({ chatId }) => {
 
                         <View className="flex-1">
                             <Text className="text-zinc-600 dark:text-zinc-400 font-semibold mb-1">
-                                {m.userName || "Користувач"}
+                                {m?.userName || "Користувач"}
                             </Text>
 
                             <Text className="text-zinc-900 dark:text-zinc-100">
