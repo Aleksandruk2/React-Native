@@ -59,6 +59,12 @@ export default function RootLayout() {
                     </ThemeProvider>
                 </Provider>
             </SafeAreaProvider>
+
+            {/*<Provider store={store}>*/}
+            {/*    <SafeAreaProvider>*/}
+            {/*        <Stack screenOptions={{ headerShown: false }} />*/}
+            {/*    </SafeAreaProvider>*/}
+            {/*</Provider>*/}
         </>
     );
 }

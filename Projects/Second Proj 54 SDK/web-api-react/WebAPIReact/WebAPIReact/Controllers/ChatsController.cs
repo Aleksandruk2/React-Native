@@ -46,7 +46,7 @@ public class ChatsController(IChatService chatService) : ControllerBase
         return Ok(chats);
     }
 
-    [HttpGet("{chatId}/messages")]
+    [HttpGet("{chatId:long}/messages")]
     public async Task<IActionResult> GetChatMessages(long chatId)
     {
         var messages = await chatService.GetChatMessagesAsync(chatId);

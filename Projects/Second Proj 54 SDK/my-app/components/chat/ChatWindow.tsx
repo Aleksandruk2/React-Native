@@ -4,7 +4,7 @@ import {
     Text,
     ScrollView,
     TouchableOpacity,
-    Image,
+    Image, Platform, KeyboardAvoidingView,
 } from "react-native";
 
 import { InputField } from "@/components/form/InputField";
@@ -101,71 +101,76 @@ const ChatWindow: FC<ChatWindowProps> = ({ chatId }) => {
 
     return (
         <View className="flex-1">
-
-            <View className="flex-row items-center justify-between p-3 border-b border-zinc-300 dark:border-zinc-700">
-                <Text className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                    Чат {isFetching && "..."}
-                </Text>
-
-                {isAdmin && (
-                    <TouchableOpacity
-                        onPress={() => setEditVisible(true)}
-                        className="px-3 py-1 bg-emerald-500 rounded-lg"
-                    >
-                        <Text className="text-white font-semibold">Редагувати</Text>
-                    </TouchableOpacity>
-                )}
-            </View>
-
-            <ScrollView
-                ref={scrollRef}
-                className="flex-1 p-4"
-                contentContainerStyle={{ paddingBottom: 20, gap: 8 }}
-                keyboardShouldPersistTaps="handled"
-                onContentSizeChange={() =>
-                    scrollRef.current?.scrollToEnd({ animated: true })
-                }
+            <KeyboardAvoidingView
+                style={{flex: 1}}
+                behavior={Platform.OS === "ios" ? "padding" : "height"}
+                keyboardVerticalOffset={Platform.OS === "ios" ? 80 : 0}
             >
-                {messages.map((m, i) => (
-                    <View
-                        key={m.id ?? `msg-${i}`}
-                        className="bg-zinc-200 dark:bg-zinc-800 p-3 rounded-xl self-start max-w-[85%] flex-row items-start gap-2"
-                    >
-                        <Image
-                            source={{ uri: `${APP_ENV.IMAGE_URL_100}${m.userImage}` }}
-                            className="w-10 h-10 rounded-full"
-                        />
+                <View className="flex-row items-center justify-between p-3 border-b border-zinc-300 dark:border-zinc-700">
+                    <Text className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+                        Чат {isFetching && "..."}
+                    </Text>
 
-                        <View className="flex-1">
-                            <Text className="text-zinc-600 dark:text-zinc-400 font-semibold mb-1">
-                                {m?.userName || "Користувач"}
-                            </Text>
-
-                            <Text className="text-zinc-900 dark:text-zinc-100">
-                                {m.message}
-                            </Text>
-                        </View>
-                    </View>
-                ))}
-            </ScrollView>
-
-            <View className="flex-row p-2 border-t border-zinc-300 dark:border-zinc-700 items-end gap-2">
-                <View className="flex-1">
-                    <InputField
-                        placeholder="Напишіть повідомлення..."
-                        value={msgForm.form.message}
-                        onChangeText={msgForm.onChange("message")}
-                        onSubmitEditing={sendMessage}
-                    />
+                    {isAdmin && (
+                        <TouchableOpacity
+                            onPress={() => setEditVisible(true)}
+                            className="px-3 py-1 bg-emerald-500 rounded-lg"
+                        >
+                            <Text className="text-white font-semibold">Редагувати</Text>
+                        </TouchableOpacity>
+                    )}
                 </View>
 
-                <TouchableOpacity
-                    onPress={sendMessage}
-                    className="bg-emerald-500 px-4 py-3 rounded-xl"
+                <ScrollView
+                    ref={scrollRef}
+                    className="flex-1 p-4"
+                    contentContainerStyle={{ paddingBottom: 20, gap: 8 }}
+                    keyboardShouldPersistTaps="handled"
+                    onContentSizeChange={() =>
+                        scrollRef.current?.scrollToEnd({ animated: true })
+                    }
                 >
-                    <Text className="text-white font-semibold">OK</Text>
-                </TouchableOpacity>
-            </View>
+                    {messages.map((m, i) => (
+                        <View
+                            key={m.id ?? `msg-${i}`}
+                            className="bg-zinc-200 dark:bg-zinc-800 p-3 rounded-xl self-start max-w-[85%] flex-row items-start gap-2"
+                        >
+                            <Image
+                                source={{ uri: `${APP_ENV.IMAGE_URL_100}${m.userImage}` }}
+                                className="w-10 h-10 rounded-full"
+                            />
+
+                            <View className="flex-1">
+                                <Text className="text-zinc-600 dark:text-zinc-400 font-semibold mb-1">
+                                    {m?.userName || "Користувач"}
+                                </Text>
+
+                                <Text className="text-zinc-900 dark:text-zinc-100">
+                                    {m.message}
+                                </Text>
+                            </View>
+                        </View>
+                    ))}
+                </ScrollView>
+
+                <View className="flex-row p-2 border-t border-zinc-300 dark:border-zinc-700 items-end gap-2">
+                    <View className="flex-1">
+                        <InputField
+                            placeholder="Напишіть повідомлення..."
+                            value={msgForm.form.message}
+                            onChangeText={msgForm.onChange("message")}
+                            onSubmitEditing={sendMessage}
+                        />
+                    </View>
+
+                    <TouchableOpacity
+                        onPress={sendMessage}
+                        className="bg-emerald-500 px-4 py-3 rounded-xl"
+                    >
+                        <Text className="text-white font-semibold">OK</Text>
+                    </TouchableOpacity>
+                </View>
+            </KeyboardAvoidingView>
 
             <EditChatModal
                 chatId={chatId}

@@ -42,11 +42,6 @@ export default function HomeScreen() {
                         </Text>
 
                         <View className="h-[2px] w-12 bg-emerald-500 my-6 rounded-full"/>
-
-                        <Text
-                            className="text-zinc-500 dark:text-zinc-400 text-center text-lg leading-7 font-medium px-4">
-                            Обери, що хочеш зробити далі
-                        </Text>
                     </View>
 
                     <View className="items-center my-10">
