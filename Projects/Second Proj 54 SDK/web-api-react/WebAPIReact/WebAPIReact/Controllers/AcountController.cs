@@ -62,6 +62,10 @@ public class AccountController(IJwtTokenService jwtTokenService,
     {
         var email = User.Claims.First()?.Value;
         var user = await userManager.FindByEmailAsync(email);
+
+        if (user == null)
+            return Unauthorized();
+
         ProfileModel me = userMapper.UserToMeModel(user);
         return Ok(me);
     }

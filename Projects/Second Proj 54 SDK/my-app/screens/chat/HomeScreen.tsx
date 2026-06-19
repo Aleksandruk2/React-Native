@@ -5,10 +5,13 @@ import {useAppSelector} from "@/store";
 import APP_ENV from "@/env";
 import {useLogout} from "@/store/hooks/useLogout";
 import {router} from "expo-router";
+import {useState} from "react";
+import EditProfileModal from "@/components/auth/EditProfileModal";
 
 export default function HomeScreen() {
     const {user} = useAppSelector(state => state.auth);
     const logout = useLogout();
+    const [visibleEditProfile, setVisibleEditProfile] = useState(false)
 
     return (
         <View className="flex-1 bg-zinc-50 dark:bg-zinc-950">
@@ -61,7 +64,7 @@ export default function HomeScreen() {
 
                             <TouchableOpacity
                                 activeOpacity={0.85}
-                                onPress={() => console.log('Profile view')}
+                                onPress={() => setVisibleEditProfile(true)}
                                 className="absolute bottom-1 right-1 w-12 h-12 rounded-full bg-emerald-500 items-center justify-center shadow-lg"
                             >
                                 <Text className="text-xl">✏️</Text>
@@ -105,6 +108,12 @@ export default function HomeScreen() {
                                 Вийти з аккаунту
                             </Text>
                         </TouchableOpacity>
+
+                        <EditProfileModal
+                            visible={visibleEditProfile}
+                            onClose={() => setVisibleEditProfile(false)}
+                        />
+
 
                     </View>
                 </ScrollView>

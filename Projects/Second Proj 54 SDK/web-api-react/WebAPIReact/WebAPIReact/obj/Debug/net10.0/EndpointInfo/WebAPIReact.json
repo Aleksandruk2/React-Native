@@ -116,13 +116,19 @@
                 "type": "object",
                 "properties": {
                   "FirstName": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Ім'я користувача",
+                    "example": "Адмін"
                   },
                   "LastName": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Прізвище користувача",
+                    "example": "Системний"
                   },
                   "Email": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Електронна пошта користувача",
+                    "example": "admin@example.com"
                   },
                   "ImageFile": {
                     "type": "string",

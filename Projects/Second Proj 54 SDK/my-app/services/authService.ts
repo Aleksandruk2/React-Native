@@ -1,11 +1,11 @@
 import {createApi} from "@reduxjs/toolkit/query/react";
 import {apiBaseQuery} from "@/utils/apiBaseQuery";
 import {ILoginModel} from "@/models/ILoginModel";
-import {LoginResponseModel} from "@/models/ILoginResponseModel";
-import {IRegisterResponseModel} from "@/models/IRegisterResponseModel";
+import {IResponseModel} from "@/models/IResponseModel";
 import {IRegisterModel} from "@/models/IRegisterModel";
 import {serialize} from "object-to-formdata";
 import IProfileModel from "@/models/IProfileModel";
+import IEditProfileModel from "@/models/IEditProfileModel";
 
 
 
@@ -14,7 +14,7 @@ export const authService= createApi({
     baseQuery: apiBaseQuery("Account"),
     tagTypes: ['Auth'],
     endpoints: (builder) => ({
-        login: builder.mutation<LoginResponseModel, ILoginModel>({
+        login: builder.mutation<IResponseModel, ILoginModel>({
             query: (credentials) => {
                 return {
                     url: 'Login',
@@ -24,7 +24,7 @@ export const authService= createApi({
             },
             invalidatesTags: ["Auth"]
         }),
-        register: builder.mutation<IRegisterResponseModel, IRegisterModel>({
+        register: builder.mutation<IResponseModel, IRegisterModel>({
             query: (model)=>{
                 const formData = serialize(model)
                 return {
@@ -36,10 +36,20 @@ export const authService= createApi({
         }),
         profile: builder.query<IProfileModel,void>({
             query: ()=> {
-                console.log("-------- Запит на профіль.")
                 return {
                     url: "Me",
                     method: "GET",
+                }
+            }
+        }),
+        editProfile: builder.mutation<IResponseModel,IEditProfileModel>({
+            query: (model)=> {
+                const formData = serialize(model)
+                console.log("Серіалізовані дані користувача:", formData);
+                return {
+                    url: "EditProfile",
+                    method: "PUT",
+                    body: formData,
                 }
             }
         })
@@ -51,6 +61,7 @@ export const {
     useLoginMutation,
     useRegisterMutation,
     useProfileQuery,
+    useEditProfileMutation,
 } = authService;
 
 // import {createApi} from "@reduxjs/toolkit/query/react";

@@ -28,6 +28,24 @@
         <member name="M:WebAPIReact.Migrations.WorkingisgoodChat.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="P:WebAPIReact.Model.Account.EditProfileModel.FirstName">
+            <summary>
+            Ім'я користувача
+            </summary>
+            <example>Адмін</example>
+        </member>
+        <member name="P:WebAPIReact.Model.Account.EditProfileModel.LastName">
+            <summary>
+            Прізвище користувача
+            </summary>
+            <example>Системний</example>
+        </member>
+        <member name="P:WebAPIReact.Model.Account.EditProfileModel.Email">
+            <summary>
+            Електронна пошта користувача
+            </summary>
+            <example>admin@example.com</example>
+        </member>
         <member name="P:WebAPIReact.Model.Account.LoginModel.Email">
             <summary>
             Електронна пошта користувача
