@@ -7,6 +7,7 @@ import {useLoginMutation} from "@/services/authService";
 import {loginSuccess} from "@/store/reducers/authSlice";
 import {useAppDispatch} from "@/hooks/redux";
 import * as SecureStore from 'expo-secure-store';
+import {useColorScheme} from "@/hooks/use-color-scheme";
 
 
 
@@ -15,6 +16,7 @@ export default function LoginScreen() {
     const [login, { isLoading }] = useLoginMutation();
     const [serverError, setServerError] = useState<string | null>(null);
     const dispatch = useAppDispatch();
+    const colorScheme = useColorScheme();
     const router = useRouter();
     const pathname = usePathname();
 
@@ -89,13 +91,19 @@ export default function LoginScreen() {
                                         name="email"
                                         rules={{ required: "Email обов’язковий" }}
                                         render={({ field: { onChange, value } }) => (
-                                            <TextInput
-                                                placeholder="Email"
-                                                keyboardType="email-address"
-                                                value={value}
-                                                onChangeText={onChange}
-                                                placeholderClassName={"text-gray-600"}
-                                                className="w-full max-w-md bg-white rounded-lg px-4 py-3 mb-4 border border-gray-300"
+                                            <TextInput placeholder="Email"
+                                                       placeholderTextColor={
+                                                           colorScheme === "dark"
+                                                               ? "#A1A1AA" // zinc-400
+                                                               : "#6B7280" // gray-500
+                                                       }
+                                                       keyboardType="email-address"
+                                                       value={value}
+                                                       onChangeText={onChange}
+                                                       className="w-full max-w-md bg-white dark:bg-zinc-800
+                                                                  text-black dark:text-gray-200
+                                                                  rounded-lg px-4 py-3 mb-4
+                                                                  border border-gray-300 dark:border-zinc-700"
                                             />
                                         )}
                             />
@@ -105,13 +113,23 @@ export default function LoginScreen() {
                                         rules={{ required: "Пароль обов’язковий" }}
                                         render={({ field: { onChange, value } }) => (
                                             <TextInput placeholder="Пароль"
+                                                       placeholderTextColor={
+                                                           colorScheme === "dark"
+                                                               ? "#A1A1AA" // zinc-400
+                                                               : "#6B7280" // gray-500
+                                                       }
                                                        secureTextEntry
                                                        value={value}
                                                        onChangeText={onChange}
-                                                       className="w-full max-w-md bg-white rounded-lg px-4 py-3 mb-6 border border-gray-300"
+                                                       className="w-full max-w-md bg-white dark:bg-zinc-800
+                                                                  text-black dark:text-gray-200
+                                                                  rounded-lg px-4 py-3 mb-4
+                                                                  border border-gray-300 dark:border-zinc-700"
                                             />
                                         )}
                             />
+
+
 
                             <Pressable
                                 disabled={isLoading}

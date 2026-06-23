@@ -1,5 +1,6 @@
 import {Stack} from "expo-router";
 import {SafeAreaProvider} from "react-native-safe-area-context";
+import {KeyboardAvoidingView, Platform} from "react-native";
 
 export default function ChatLayout() {
     return (

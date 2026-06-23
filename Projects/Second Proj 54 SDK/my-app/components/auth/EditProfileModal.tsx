@@ -54,7 +54,7 @@ const EditChatModal: FC<Props> = ({  visible, onClose }) => {
 
 
     const pickImage = async () => {
-        console.log("Pick image");
+        // console.log("Pick image");
         const permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
         if (!permissionResult.granted) {
             alert("Доступ до галереї потрібен для вибору фото.");
@@ -80,7 +80,7 @@ const EditChatModal: FC<Props> = ({  visible, onClose }) => {
     }
 
     const onSubmit = async (data: IEditProfileModel) => {
-        console.log("Інформація користувача",data);
+        // console.log("Інформація користувача",data);
         try {
             const response = await editProfile(data).unwrap();
             const token = response.token;
@@ -109,100 +109,92 @@ const EditChatModal: FC<Props> = ({  visible, onClose }) => {
                 <View className="w-[92%] max-h-[85%] bg-white dark:bg-zinc-900 rounded-xl">
 
                     <ScrollView className="p-4">
-
-                        <KeyboardAvoidingView
-                            style={{flex: 1}}
-                            behavior={Platform.OS === "ios" ? "padding" : "height"}
-                            keyboardVerticalOffset={Platform.OS === "ios" ? 80 : 0}
+                        <ScrollView
+                            showsVerticalScrollIndicator={false}
+                            keyboardShouldPersistTaps="handled"
+                            contentContainerStyle={{
+                                flexGrow: 1
+                            }}
                         >
-                            <ScrollView
-                                showsVerticalScrollIndicator={false}
-                                keyboardShouldPersistTaps="handled"
-                                contentContainerStyle={{
-                                    flexGrow: 1
-                                }}
-                            >
-                                <View className="flex-1 justify-center items-center px-6">
-                                    <Text className="text-3xl font-bold text-emerald-500 mb-8">
-                                        Редагувати профіль
+                            <View className="flex-1 justify-center items-center px-6">
+                                <Text className="text-3xl font-bold text-emerald-500 mb-8">
+                                    Редагувати профіль
+                                </Text>
+
+                                <View className={"items-center my-8"}>
+                                    <ImagePickerButton
+                                        imageUri={image?.uri ?? null}
+                                        onPress={pickImage}
+                                    />
+                                    <Text className="text-gray-600 mt-2">
+                                        Натисніть щоб обрати фото
                                     </Text>
-
-                                    <View className={"items-center my-8"}>
-                                        <ImagePickerButton
-                                            imageUri={image?.uri ?? null}
-                                            onPress={pickImage}
-                                        />
-                                        <Text className="text-gray-600 mt-2">
-                                            Натисніть щоб обрати фото
-                                        </Text>
-                                    </View>
-
-                                    <Controller control={control}
-                                                name="firstName"
-                                                rules={{required: "Ім’я обов’язкове"}}
-                                                render={({field: {onChange, value}}) => (
-                                                    <TextInput placeholder="Ім’я"
-                                                               placeholderTextColor={
-                                                                   colorScheme === "dark"
-                                                                       ? "#A1A1AA" // zinc-400
-                                                                       : "#6B7280" // gray-500
-                                                               }
-                                                               value={value}
-                                                               onChangeText={onChange}
-                                                               className="w-full max-w-md bg-white dark:bg-zinc-800
-                                                                  text-black dark:text-gray-200
-                                                                  rounded-lg px-4 py-3 mb-4
-                                                                  border border-gray-300 dark:border-zinc-700"
-                                                    />
-                                                )}
-                                    />
-
-                                    <Controller control={control}
-                                                name="lastName"
-                                                rules={{required: "Прізвище обов’язкове"}}
-                                                render={({field: {onChange, value}}) => (
-                                                    <TextInput placeholder="Прізвище"
-                                                               placeholderTextColor={
-                                                                   colorScheme === "dark"
-                                                                       ? "#A1A1AA" // zinc-400
-                                                                       : "#6B7280" // gray-500
-                                                               }
-                                                               value={value}
-                                                               onChangeText={onChange}
-                                                               className="w-full max-w-md bg-white dark:bg-zinc-800
-                                                                  text-black dark:text-gray-200
-                                                                  rounded-lg px-4 py-3 mb-4
-                                                                  border border-gray-300 dark:border-zinc-700"
-                                                    />
-                                                )}
-                                    />
-
-                                    <Controller control={control}
-                                                name="email"
-                                                rules={{required: "Email обов’язковий"}}
-                                                render={({field: {onChange, value}}) => (
-                                                    <TextInput placeholder="Email"
-                                                               placeholderTextColor={
-                                                                   colorScheme === "dark"
-                                                                       ? "#A1A1AA" // zinc-400
-                                                                       : "#6B7280" // gray-500
-                                                               }
-                                                               keyboardType="email-address"
-                                                               value={value}
-                                                               onChangeText={onChange}
-                                                               className="w-full max-w-md bg-white dark:bg-zinc-800
-                                                                  text-black dark:text-gray-200
-                                                                  rounded-lg px-4 py-3 mb-4
-                                                                  border border-gray-300 dark:border-zinc-700"
-                                                    />
-                                                )}
-                                    />
-
                                 </View>
-                            </ScrollView>
-                        </KeyboardAvoidingView>
 
-                        <View className="h-6" />
+                                <Controller control={control}
+                                            name="firstName"
+                                            rules={{required: "Ім’я обов’язкове"}}
+                                            render={({field: {onChange, value}}) => (
+                                                <TextInput placeholder="Ім’я"
+                                                           placeholderTextColor={
+                                                               colorScheme === "dark"
+                                                                   ? "#A1A1AA" // zinc-400
+                                                                   : "#6B7280" // gray-500
+                                                           }
+                                                           value={value}
+                                                           onChangeText={onChange}
+                                                           className="w-full max-w-md bg-white dark:bg-zinc-800
+                                                                  text-black dark:text-gray-200
+                                                                  rounded-lg px-4 py-3 mb-4
+                                                                  border border-gray-300 dark:border-zinc-700"
+                                                />
+                                            )}
+                                />
+
+                                <Controller control={control}
+                                            name="lastName"
+                                            rules={{required: "Прізвище обов’язкове"}}
+                                            render={({field: {onChange, value}}) => (
+                                                <TextInput placeholder="Прізвище"
+                                                           placeholderTextColor={
+                                                               colorScheme === "dark"
+                                                                   ? "#A1A1AA" // zinc-400
+                                                                   : "#6B7280" // gray-500
+                                                           }
+                                                           value={value}
+                                                           onChangeText={onChange}
+                                                           className="w-full max-w-md bg-white dark:bg-zinc-800
+                                                                  text-black dark:text-gray-200
+                                                                  rounded-lg px-4 py-3 mb-4
+                                                                  border border-gray-300 dark:border-zinc-700"
+                                                />
+                                            )}
+                                />
+
+                                <Controller control={control}
+                                            name="email"
+                                            rules={{required: "Email обов’язковий"}}
+                                            render={({field: {onChange, value}}) => (
+                                                <TextInput placeholder="Email"
+                                                           placeholderTextColor={
+                                                               colorScheme === "dark"
+                                                                   ? "#A1A1AA" // zinc-400
+                                                                   : "#6B7280" // gray-500
+                                                           }
+                                                           keyboardType="email-address"
+                                                           value={value}
+                                                           onChangeText={onChange}
+                                                           className="w-full max-w-md bg-white dark:bg-zinc-800
+                                                                  text-black dark:text-gray-200
+                                                                  rounded-lg px-4 py-3 mb-4
+                                                                  border border-gray-300 dark:border-zinc-700"
+                                                />
+                                            )}
+                                />
+
+                            </View>
+                        </ScrollView>
+                        <View className="h-6"/>
                     </ScrollView>
 
                     <View className="flex-row justify-end gap-4 p-3 border-t border-zinc-200 dark:border-zinc-800">

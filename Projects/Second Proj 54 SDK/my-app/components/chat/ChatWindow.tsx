@@ -103,10 +103,11 @@ const ChatWindow: FC<ChatWindowProps> = ({ chatId }) => {
         <View className="flex-1">
             <KeyboardAvoidingView
                 style={{flex: 1}}
-                behavior={Platform.OS === "ios" ? "padding" : "height"}
-                keyboardVerticalOffset={Platform.OS === "ios" ? 80 : 0}
+                behavior={Platform.OS === "ios" ? "padding" : "padding"}
+                keyboardVerticalOffset={Platform.OS === "ios" ? 80 : 35}
             >
-                <View className="flex-row items-center justify-between p-3 border-b border-zinc-300 dark:border-zinc-700">
+                <View
+                    className="flex-row items-center justify-between p-3 border-b border-zinc-300 dark:border-zinc-700">
                     <Text className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
                         Чат {isFetching && "..."}
                     </Text>
@@ -124,10 +125,10 @@ const ChatWindow: FC<ChatWindowProps> = ({ chatId }) => {
                 <ScrollView
                     ref={scrollRef}
                     className="flex-1 p-4"
-                    contentContainerStyle={{ paddingBottom: 20, gap: 8 }}
+                    contentContainerStyle={{paddingBottom: 20, gap: 8}}
                     keyboardShouldPersistTaps="handled"
                     onContentSizeChange={() =>
-                        scrollRef.current?.scrollToEnd({ animated: true })
+                        scrollRef.current?.scrollToEnd({animated: true})
                     }
                 >
                     {messages.map((m, i) => (
@@ -136,7 +137,7 @@ const ChatWindow: FC<ChatWindowProps> = ({ chatId }) => {
                             className="bg-zinc-200 dark:bg-zinc-800 p-3 rounded-xl self-start max-w-[85%] flex-row items-start gap-2"
                         >
                             <Image
-                                source={{ uri: `${APP_ENV.IMAGE_URL_100}${m.userImage}` }}
+                                source={{uri: `${APP_ENV.IMAGE_URL_100}${m.userImage}`}}
                                 className="w-10 h-10 rounded-full"
                             />
 
@@ -152,6 +153,7 @@ const ChatWindow: FC<ChatWindowProps> = ({ chatId }) => {
                         </View>
                     ))}
                 </ScrollView>
+
 
                 <View className="flex-row p-2 border-t border-zinc-300 dark:border-zinc-700 items-end gap-2">
                     <View className="flex-1">
@@ -170,14 +172,16 @@ const ChatWindow: FC<ChatWindowProps> = ({ chatId }) => {
                         <Text className="text-white font-semibold">OK</Text>
                     </TouchableOpacity>
                 </View>
-            </KeyboardAvoidingView>
 
+
+            </KeyboardAvoidingView>
             <EditChatModal
                 chatId={chatId}
                 visible={editVisible}
                 onClose={() => setEditVisible(false)}
             />
         </View>
+
     );
 };
 

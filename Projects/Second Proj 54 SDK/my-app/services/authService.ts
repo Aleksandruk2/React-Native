@@ -44,6 +44,7 @@ export const authService= createApi({
         }),
         editProfile: builder.mutation<IResponseModel,IEditProfileModel>({
             query: (model)=> {
+                console.log("Дані до серіалізації:", model)
                 const formData = serialize(model)
                 console.log("Серіалізовані дані користувача:", formData);
                 return {
