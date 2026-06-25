@@ -58,6 +58,46 @@
             </summary>
             <example>Admin123!</example>
         </member>
+        <member name="P:WebAPIReact.Smtp.EmailConfiguration.From">
+            <summary>
+            Хто відправляє листа
+            </summary>
+        </member>
+        <member name="P:WebAPIReact.Smtp.EmailConfiguration.SmtpServer">
+            <summary>
+            Сервер smtp
+            </summary>
+        </member>
+        <member name="P:WebAPIReact.Smtp.EmailConfiguration.SmtpPort">
+            <summary>
+            Порт на сервері, на якому він працює
+            </summary>
+        </member>
+        <member name="P:WebAPIReact.Smtp.EmailConfiguration.UserName">
+            <summary>
+            Хто буде піключатися до SMTP серверу
+            </summary>
+        </member>
+        <member name="P:WebAPIReact.Smtp.EmailConfiguration.Password">
+            <summary>
+            Пароль видає нам сам UKR.NET
+            </summary>
+        </member>
+        <member name="P:WebAPIReact.Smtp.MyEmailMessage.Subject">
+            <summary>
+            Тема листа
+            </summary>
+        </member>
+        <member name="P:WebAPIReact.Smtp.MyEmailMessage.Body">
+            <summary>
+            Тіло листа
+            </summary>
+        </member>
+        <member name="P:WebAPIReact.Smtp.MyEmailMessage.To">
+            <summary>
+            Кому надсилаємо
+            </summary>
+        </member>
         <member name="T:Program">
             <summary>
             Auto-generated public partial Program class for top-level statement apps.

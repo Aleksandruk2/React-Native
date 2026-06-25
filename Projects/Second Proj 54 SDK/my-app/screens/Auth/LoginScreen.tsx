@@ -1,4 +1,13 @@
-import {View, Text, TextInput, Pressable, ScrollView, Platform, KeyboardAvoidingView} from "react-native";
+import {
+    View,
+    Text,
+    TextInput,
+    Pressable,
+    ScrollView,
+    Platform,
+    KeyboardAvoidingView,
+    TouchableOpacity
+} from "react-native";
 import { useForm, Controller } from "react-hook-form";
 import {usePathname, useRouter} from "expo-router";
 import {useState} from "react";
@@ -18,12 +27,9 @@ export default function LoginScreen() {
     const dispatch = useAppDispatch();
     const colorScheme = useColorScheme();
     const router = useRouter();
-    const pathname = usePathname();
-
-
 
     const onSubmit = async (data: ILoginModel) => {
-        console.log("Form data:", data);
+        // console.log("Form data:", data);
         try {
             const result = await login(data).unwrap();
 
@@ -55,9 +61,9 @@ export default function LoginScreen() {
 
     };
 
-    const onHandleToLogger = () => {
-        router.push("/logger");
-    }
+    // const onHandleToLogger = () => {
+    //     router.push("/logger");
+    // }
 
     return (
         <>
@@ -141,11 +147,20 @@ export default function LoginScreen() {
                                 </Text>
                             </Pressable>
 
-                            <Pressable onPress={onHandleToLogger}
-                                       className="bg-blue-500 dark:bg-blue-900 border dark:border-blue-700 border-blue-600 w-full rounded-lg py-3 items-center mb-3"
+                            <TouchableOpacity
+                                className="mb-6 mt-2"
+                                onPress={() => router.replace('/forgot-password')}
                             >
-                                <Text className="text-white dark:text-gray-100 font-semibold">Логер</Text>
-                            </Pressable>
+                                <Text className="font-spartan-semibold text-[13px] text-blue-500 underline dark:text-[#DFF7E2]">
+                                    Забули пароль?
+                                </Text>
+                            </TouchableOpacity>
+
+                            {/*<Pressable onPress={onHandleToLogger}*/}
+                            {/*           className="bg-blue-500 dark:bg-blue-900 border dark:border-blue-700 border-blue-600 w-full rounded-lg py-3 items-center mb-3"*/}
+                            {/*>*/}
+                            {/*    <Text className="text-white dark:text-gray-100 font-semibold">Логер</Text>*/}
+                            {/*</Pressable>*/}
                         </View>
                     </ScrollView>
                 </KeyboardAvoidingView>

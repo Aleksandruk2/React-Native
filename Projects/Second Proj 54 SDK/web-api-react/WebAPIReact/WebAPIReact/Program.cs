@@ -14,6 +14,7 @@ using WebAPIReact.Hubs;
 using WebAPIReact.Interfaces;
 using WebAPIReact.Mapper;
 using WebAPIReact.Services;
+using WebAPIReact.Smtp;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,11 +24,15 @@ builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
 builder.Services.AddScoped<IIdentityService, IdentityService>();
 builder.Services.AddScoped<IImageService, ImageService>();
 builder.Services.AddScoped<IChatService, ChatService>();
+builder.Services.AddScoped<ISmtpService, SmtpService>();
 
 builder.Services.AddSingleton<UserMapper>();
 builder.Services.AddSingleton<ChatMapper>();
 
 builder.Services.AddSignalR();
+
+builder.Services.Configure<EmailConfiguration>(
+    builder.Configuration.GetSection("EmailConfiguration"));
 
 builder.Services.AddSwaggerGen(options =>
 {

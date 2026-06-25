@@ -6,6 +6,8 @@ import {IRegisterModel} from "@/models/IRegisterModel";
 import {serialize} from "object-to-formdata";
 import IProfileModel from "@/models/IProfileModel";
 import IEditProfileModel from "@/models/IEditProfileModel";
+import {IForgotPasswordModel} from "@/models/IForgotPasswordModel";
+import {IResetPasswordModel} from "@/models/IResetPasswordModel";
 
 
 
@@ -53,7 +55,21 @@ export const authService= createApi({
                     body: formData,
                 }
             }
-        })
+        }),
+        forgotPassword: builder.mutation<void, IForgotPasswordModel>({
+            query: (model) => ({
+                url: 'ForgotPassword',
+                method: 'POST',
+                body: model
+            })
+        }),
+        resetPassword: builder.mutation<void, IResetPasswordModel>({
+            query: (model) => ({
+                url: "ResetPassword",
+                method: "POST",
+                body: model,
+            })
+        }),
 
     })
 });
@@ -63,6 +79,8 @@ export const {
     useRegisterMutation,
     useProfileQuery,
     useEditProfileMutation,
+    useForgotPasswordMutation,
+    useResetPasswordMutation,
 } = authService;
 
 // import {createApi} from "@reduxjs/toolkit/query/react";
